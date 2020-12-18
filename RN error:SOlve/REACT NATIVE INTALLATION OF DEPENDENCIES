@@ -1,0 +1,63 @@
+# REACT NATIVE INTALLATION OF DEPENDENCIES
+
+## if Linux system then prefix these commands with sudo
+
+#### to clear cache memories
+
+expo start -c
+
+#### to install npm packages
+
+npm install 
+
+or 
+
+expo add yarn 
+
+#### to install react native elements
+
+npm install react-native-elements
+
+##### for yarn 
+
+yarn add react-**native**-elements
+
+#### if the saving of any particular file is not allowed in mac specially then eg App.js
+
+**sudo chmod  777 App.js** 
+
+Sudo chmod -R 777 name of folder/
+
+
+
+ #### To start the expo cli tool
+
+
+
+
+
+expo start
+
+yarn add react-**native**-elements # or with npm npm install react-**native**-elements
+
+
+
+An error of a kind:
+
+
+![image-20200508150107774](/Users/nairrita/Library/Application Support/typora-user-images/image-20200508150107774.png)
+
+
+
+npm install --save react-native-gesture-handler react-native-reanimated react-native-screens
+
+or 
+
+ npm add react-navigation-material-bottom-tabs react-native-paper
+
+
+conda config --set auto_activate_base false- while running Anaconda this is happening
+
+ 
+
+Npm install node-gyp---> for python error

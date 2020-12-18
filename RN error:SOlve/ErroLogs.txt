@@ -1,0 +1,96 @@
+ERROR LOG BOOK
+
+
+
+### ERROR TYPE: Unhandled Promise rejection error @ firestore-atob error
+
+
+
+Solution: sudo npm install firebase@7.9.0 also remove the ^ symbol
+
+​				 change sdk version to 36 by 
+
+​				expo update ~36.0.0
+
+
+
+### ERROR TYPE: MINIFIED REACT ERROR 
+
+
+
+SOL: To remove the curly bracket enclosing the classname if the class has been declared with export default prefix else it is fine
+
+
+
+### Error type: unable to resolve expo font.js
+
+
+
+Sol: import * as Font from 'expo-font'
+
+
+
+
+
+
+### Error type: unable to add any file and save file to a folder
+
+Sol: chmod  -R 777 foldername/      ----> all files in the folder gets permission
+
+Sol: chmod  777   name.js.               -----> one file permission in the folder
+
+
+### Error type : Toast Android is not supported on this platform error with React native
+
+reason: Trying to use Android Toast on IOS platform .
+
+Sol: Toast Android does not support IOS devices so use Alert only 
+
+
+#### Uncaught Error: Packager is not running at http://192.168.0.100.19001
+
+Reason: If pc had switched networks and was on a different network compared to the phone . 
+Sol: Ensure that computer and phone are on the same network. Switching to be on the same network as my phone resolved the issue.
+
+Reason: the problem may occur due to the firewall . 
+Sol: Try to close any firewall , any antivirus. Disable the firewall for the 19001 port of your  IP address.
+Sol: Try running on Tunnel Mode.
+
+
+
+Final Solve:
+just restart all devices:
+That includes:
+Your computer
+Your phones
+Your router
+It solved.
+
+Last solve:
+
+ know your IPv4---> Type in the  terminal ip a and then search for the word inet and copy the sequence of numbers next to it. That is your IPv4.
+
+
+
+Then enter the command sudo ufw allow from <your-IPv4> to any port <the-port>, for example: sudo ufw allow from 192.168.0.100/24 to any port 19001. 
+This will add a rule to the firewall configuration and should fix the issue.
+
+After work done use it at your own risk and remember to delete the previously created rule when you finish working with Expo with the command 
+sudo ufw delete allow from 192.168.0.100/24 to any port 19001, just for security reasons. 
+To check all the configured rules and the status of the firewall: sudo ufw status.
+
+
+
+Change from zsh to bash 
+
+chsh -s /bin/bash
+
+Change from bash to zsh 
+
+chsh -s /bin/zsh
+
+
+
+
+
+
